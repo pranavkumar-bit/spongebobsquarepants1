@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Password</title>
+
+	<script type="text/javascript">
+		function checkpassword()  { 
+			var password = document.getElementById("passwordbox")
+			var passwordText = password.value;
+			if(passwordText == "Iceggvgd") {
+			return true;
+			}
+			else{
+				alert("Access denied fool!")
+				return false;
+			}
+
+		}
+</script>
+	<style typr="text/css">
+		h1{
+			font-family: 'Bacasime Antique', serif;
+		}
+
+		p{
+			font-family: 'Agdasima', sans-serif;
+		}
+		a{
+			font-family: 'Roboto', sans-serif;
+			 font-weight:bold ;
+			 background-color: #4dafd6;
+			 font-size: 30px;
+			 border: none;
+			 padding:8px 25px;
+			 text-align: center;
+			 border-radius: 4px;
+			 colour:black;
+			 text-decoration: none;
+		}
+
+		a:hover{
+			background-color: #3186a8;
+		}
+
+		section.box{
+			text-align: center;
+			margin:200px;
+		}
+		body{
+			background-color: lightblue;
+		}
+
+</style>
+</head>
+<body>
+	<section class="welcome box">
+	<h1 style="font-size:50px;">Welcome!</h1>
+	<p> Please enter the password to enter the following website</p>
+	<p> Password: <input id="passwordbox" type="password"> </p>
+	<a href="Pranavkumarpage1.html" onclick="return checkpassword();"> Enter </a>
+
+</body>
+</html>
